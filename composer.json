@@ -1,0 +1,40 @@
+{
+  "name": "donttrythisathome/crm-client",
+  "license": "proprietary",
+  "description": "The external CRM client",
+  "minimum-stability": "dev",
+  "type": "library",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Constantine Derkach",
+      "email": "koderkach@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4 | ^8.0",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Donttrythisathome\\CRMClient\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Donttrythisathome\\CRMClient\\LaravelServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "illuminate/support": "^7.0 | ^8.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "prefer-stable": true
+}
